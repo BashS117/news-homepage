@@ -22,13 +22,13 @@ function News()  {
     ]
     
   return (
-    <aside className='new-content bg-[var(--Very-dark-blue)] py-6 px-7'>
+    <aside className='new-content bg-[var(--Very-dark-blue)] py-6 px-7 sm:mt-8'>
         <h1 className='text-[var(--Soft-orange)] font-bold text-[2.5rem] mb-5'>New</h1>
 
         {newContent.map((content,index)=>(
             <div key={content.title} className={index !== newContent.length - 1 ? 'border-b-[1px] border-[var(--Grayish-blue)] mb-[22px] pb-[2.5rem]' : 'border-b-0'}>
                 <h2 className='mb-2 text-[var(--Off-white)] font-bold text-[1.2rem] hover:text-[var(--Soft-orange)]'>{content.title}</h2>
-                <p className='text-[var(--Grayish-blue)] font-normal'>{content.description}</p>
+                <p className='text-[var(--Grayish-blue)] font-normal sm:text-[0.8rem]'>{content.description}</p>
 
             </div>
         ))}
