@@ -1,11 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+   
+
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +27,39 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--Off-white);
+  font-family: 'Inter', sans-serif;}
+
+
+.container{
+  height: 900px;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
+  display: grid;
+  gap: 1.8rem;
+  grid-template-areas:
+  
+  "main-content main-content new"
+  "tier tier tier"
+  ;
 }
+.main-content{
+  grid-area: main-content;
+}
+.new-content{
+  grid-area: new;
+}
+.tier{
+  grid-area: tier;
+}
+p{
+  color: var(--Dark-grayish-blue);
+}
+h1{
+  color: var(--Very-dark-blue) ;
+}
+a:hover{
+  color: var(--Soft-red);
+}
+
+
