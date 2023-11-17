@@ -34,7 +34,7 @@ function TierTop() {
                     </figure>
                     <div className='w-[240px] ml-6 '>
                         <span className='text-[2rem] font-bold text-[var(--Grayish-blue)]'>0{index + 1}</span>
-                        <h2 className='hover:text-[var(--Soft-red)] mb-2 text-[var(--Very-dark-blue)] font-extrabold text-[1.2rem] sm:text-[1.1rem]'>{content.title}</h2>
+                        <h2 className=' hover:text-[var(--Soft-red)] mb-2 text-[var(--Very-dark-blue)] font-extrabold text-[1.2rem] sm:text-[1.1rem] cursor-pointer'>{content.title}</h2>
                         <p className='font-normal sm:pr-2 sm:text-[0.9rem]'>{content.description}</p>
                     </div>
 
